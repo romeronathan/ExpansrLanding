@@ -63,7 +63,7 @@ export const Feature = () => {
             Bear. We never had the chance to.
           </p>
           <a
-            href="/"
+
             aria-label=""
             className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
           >
@@ -95,7 +95,7 @@ export const Feature = () => {
             catfish soapfish ling gray mullet!
           </p>
           <a
-            href="/"
+
             aria-label=""
             className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
           >
@@ -126,13 +126,13 @@ export const Feature = () => {
             with a bunch of crook pikelets.
           </p>
           <a
-            href="/"
+
             aria-label=""
             className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
           >
             Learn more
           </a>
-        </div>
+        </div >
         <div className="max-w-md sm:mx-auto sm:text-center">
           <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-indigo-50 sm:mx-auto sm:w-24 sm:h-24">
             <svg
@@ -159,15 +159,15 @@ export const Feature = () => {
             problem-solvers.
           </p>
           <a
-            href="/"
+
             aria-label=""
             className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
           >
             Learn more
           </a>
-        </div>
-      </div>
-    </div>
+        </div >
+      </div >
+    </div >
   );
 };
 

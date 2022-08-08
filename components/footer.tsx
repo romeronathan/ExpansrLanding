@@ -6,7 +6,7 @@ export const Footer = () => {
                 <div className="grid gap-16 row-gap-10 mb-8 lg:grid-cols-6">
                     <div className="md:max-w-md lg:col-span-2">
                         <a
-                            href="/"
+
                             aria-label="Go home"
                             title="Company"
                             className="inline-flex items-center"
@@ -49,7 +49,7 @@ export const Footer = () => {
                             <ul className="mt-2 space-y-2">
                                 <li>
                                     <a
-                                        href="/"
+
                                         className="transition-colors duration-300 text-deep-purple-50 "
                                     >
                                         News
@@ -57,7 +57,7 @@ export const Footer = () => {
                                 </li>
                                 <li>
                                     <a
-                                        href="/"
+
                                         className="transition-colors duration-300 text-deep-purple-50 "
                                     >
                                         World
@@ -65,7 +65,7 @@ export const Footer = () => {
                                 </li>
                                 <li>
                                     <a
-                                        href="/"
+
                                         className="transition-colors duration-300 text-deep-purple-50 "
                                     >
                                         Games
@@ -73,14 +73,14 @@ export const Footer = () => {
                                 </li>
                                 <li>
                                     <a
-                                        href="/"
+
                                         className="transition-colors duration-300 text-deep-purple-50 "
                                     >
                                         References
                                     </a>
                                 </li>
                             </ul>
-                        </div>
+                        </div >
                         <div>
                             <p className="font-semibold tracking-wide text-blue-100">
                                 Cherry
@@ -88,7 +88,7 @@ export const Footer = () => {
                             <ul className="mt-2 space-y-2">
                                 <li>
                                     <a
-                                        href="/"
+
                                         className="transition-colors duration-300 text-deep-purple-50 "
                                     >
                                         Web
@@ -96,7 +96,7 @@ export const Footer = () => {
                                 </li>
                                 <li>
                                     <a
-                                        href="/"
+
                                         className="transition-colors duration-300 text-deep-purple-50 "
                                     >
                                         eCommerce
@@ -104,30 +104,30 @@ export const Footer = () => {
                                 </li>
                                 <li>
                                     <a
-                                        href="/"
+
                                         className="transition-colors duration-300 text-deep-purple-50 "
                                     >
                                         Business
                                     </a>
-                                </li>
+                                </li >
                                 <li>
                                     <a
-                                        href="/"
+
                                         className="transition-colors duration-300 text-deep-purple-50 "
                                     >
                                         Entertainment
                                     </a>
-                                </li>
+                                </li >
                                 <li>
                                     <a
-                                        href="/"
+
                                         className="transition-colors duration-300 text-deep-purple-50 "
                                     >
                                         Portfolio
                                     </a>
-                                </li>
-                            </ul>
-                        </div>
+                                </li >
+                            </ul >
+                        </div >
                         <div>
                             <p className="font-semibold tracking-wide text-blue-100">
                                 Apples
@@ -135,7 +135,7 @@ export const Footer = () => {
                             <ul className="mt-2 space-y-2">
                                 <li>
                                     <a
-                                        href="/"
+
                                         className="transition-colors duration-300 text-deep-purple-50 "
                                     >
                                         Media
@@ -143,7 +143,7 @@ export const Footer = () => {
                                 </li>
                                 <li>
                                     <a
-                                        href="/"
+
                                         className="transition-colors duration-300 text-deep-purple-50 "
                                     >
                                         Brochure
@@ -151,30 +151,30 @@ export const Footer = () => {
                                 </li>
                                 <li>
                                     <a
-                                        href="/"
+
                                         className="transition-colors duration-300 text-deep-purple-50 "
                                     >
                                         Nonprofit
                                     </a>
-                                </li>
+                                </li >
                                 <li>
                                     <a
-                                        href="/"
+
                                         className="transition-colors duration-300 text-deep-purple-50 "
                                     >
                                         Educational
                                     </a>
-                                </li>
+                                </li >
                                 <li>
                                     <a
-                                        href="/"
+
                                         className="transition-colors duration-300 text-deep-purple-50 "
                                     >
                                         Projects
                                     </a>
-                                </li>
-                            </ul>
-                        </div>
+                                </li >
+                            </ul >
+                        </div >
                         <div>
                             <p className="font-semibold tracking-wide text-blue-100">
                                 Business
@@ -182,7 +182,7 @@ export const Footer = () => {
                             <ul className="mt-2 space-y-2">
                                 <li>
                                     <a
-                                        href="/"
+
                                         className="transition-colors duration-300 text-deep-purple-50 "
                                     >
                                         Infopreneur
@@ -190,7 +190,7 @@ export const Footer = () => {
                                 </li>
                                 <li>
                                     <a
-                                        href="/"
+
                                         className="transition-colors duration-300 text-deep-purple-50 "
                                     >
                                         Personal
@@ -198,31 +198,31 @@ export const Footer = () => {
                                 </li>
                                 <li>
                                     <a
-                                        href="/"
+
                                         className="transition-colors duration-300 text-deep-purple-50 "
                                     >
                                         Wiki
                                     </a>
-                                </li>
+                                </li >
                                 <li>
                                     <a
-                                        href="/"
+
                                         className="transition-colors duration-300 text-deep-purple-50 "
                                     >
                                         Forum
                                     </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+                                </li >
+                            </ul >
+                        </div >
+                    </div >
+                </div >
                 <div className="flex flex-col justify-between pt-5 pb-10 border-t  sm:flex-row">
                     <p className="text-sm text-gray-100">
                         © Copyright 2020 Lorem Inc. All rights reserved.
                     </p>
                     <div className="flex items-center mt-4 space-x-4 sm:mt-0">
                         <a
-                            href="/"
+
                             className="transition-colors duration-300  "
                         >
                             <svg viewBox="0 0 24 24" fill="currentColor" className="h-5">
@@ -230,7 +230,7 @@ export const Footer = () => {
                             </svg>
                         </a>
                         <a
-                            href="/"
+
                             className="transition-colors duration-300  "
                         >
                             <svg viewBox="0 0 30 30" fill="currentColor" className="h-6">
@@ -239,17 +239,17 @@ export const Footer = () => {
                             </svg>
                         </a>
                         <a
-                            href="/"
+
                             className="transition-colors duration-300  "
                         >
                             <svg viewBox="0 0 24 24" fill="currentColor" className="h-5">
                                 <path d="M22,0H2C0.895,0,0,0.895,0,2v20c0,1.105,0.895,2,2,2h11v-9h-3v-4h3V8.413c0-3.1,1.893-4.788,4.659-4.788 c1.325,0,2.463,0.099,2.795,0.143v3.24l-1.918,0.001c-1.504,0-1.795,0.715-1.795,1.763V11h4.44l-1,4h-3.44v9H22c1.105,0,2-0.895,2-2 V2C24,0.895,23.105,0,22,0z" />
                             </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+                        </a >
+                    </div >
+                </div >
+            </div >
+        </div >
     );
 };
 
