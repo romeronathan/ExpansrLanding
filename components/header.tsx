@@ -3,21 +3,14 @@ import Image from "next/image";
 import Feature from '../components/feature-header';
 import { ScrollContext } from "./scroll-observer";
 const Header = () => {
-  const refContainer = useRef<HTMLDivElement>(null);
-  const { scrollY } = useContext(ScrollContext);
 
-  let progress = 0;
-
-  const { current: elContainer } = refContainer;
-  if (elContainer) {
-    progress = Math.min(1, scrollY / elContainer.offsetHeight);
-    console.log(progress);
-  }
 
 
   return (
-    <div style={{ transform: `translateY(${progress * 25}vh)`, filter: `blur(${progress * 5}px)` }} ref={refContainer} className="sticky top-0
-     relative flex flex-col-reverse px-4 py-16 mx-auto lg:block lg:flex-col lg:py-32 xl:py-48 md:px-8 sm:max-w-xl md:max-w-full -z-10">
+    <div
+      className="
+    sticky top-0
+     flex flex-col-reverse px-4 py-16 mx-auto lg:block lg:flex-col lg:py-32 xl:py-48 md:px-8 sm:max-w-xl md:max-w-full -z-10">
       <div className="flex justify-center h-full -mx-4 overflow-hidden lg:pt-24 lg:pb-16 lg:pr-8 xl:pr-0 lg:w-1/2 lg:absolute lg:justify-end lg:bottom-0 lg:left-0 lg:items-center">
         <img
           src="https://kitwind.io/assets/kometa/laptop.png"
@@ -33,10 +26,10 @@ const Header = () => {
 
               </p>
             </div>
-            <h2 className="max-w-lg mb-6 font-sans text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl sm:leading-none">
+            <h2 className="drop-shadow-md max-w-lg mb-6 font-sans text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl sm:leading-none">
               Technology solutions for scale.
             </h2>
-            <p className="text-base text-gray-700 md:text-lg">
+            <p className="drop-shadow-md text-base text-gray-700 md:text-lg">
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
               accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
               quae. explicabo.

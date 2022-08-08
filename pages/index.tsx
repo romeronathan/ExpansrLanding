@@ -8,8 +8,19 @@ import Feature from '../components/feature-header'
 import Footer from '../components/footer'
 import FeatureList from '../components/feature-list'
 import Content from '../components/content-block'
-
+import { useRef, useContext } from 'react'
+import { ScrollContext } from '../components/scroll-observer'
 const Home: NextPage = () => {
+  const refContainer = useRef<HTMLDivElement>(null);
+  const { scrollY } = useContext(ScrollContext);
+
+  let progress = 0;
+
+  const { current: elContainer } = refContainer;
+  if (elContainer) {
+    progress = Math.min(1, scrollY / elContainer.offsetHeight);
+  }
+
   return (
     <div>
       <div >
@@ -19,7 +30,7 @@ const Home: NextPage = () => {
           <link rel="icon" href="/favicon.ico" />
           <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"></link>
         </Head>
-        <div className='-z-50 pb-3 drop-shadow-md bg-gradient-to-r from-cyan-300 to-blue-100'>
+        <div style={{ transform: `translateY(${progress * 30}vh)` }} ref={refContainer} className='-z-50 pb-3 drop-shadow-md bg-gradient-to-r from-cyan-300 to-blue-100'>
           <Navbar />
           <Header />
 
@@ -35,7 +46,7 @@ const Home: NextPage = () => {
       </div>
 
       <Footer />
-    </div>
+      </div>
   )
 }
 

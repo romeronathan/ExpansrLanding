@@ -5,7 +5,7 @@ const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
-        <div className="drop-shadow-xl bg-white mx-auto lg:py-4  md:max-w-full  md:px-24 lg:px-8">
+        <div className="drop-shadow-md bg-white mx-auto lg:py-4  md:max-w-full  md:px-24 lg:px-8">
             <div className="relative flex items-center justify-between lg:justify-center lg:space-x-16">
                 <ul className="flex items-center hidden space-x-8 lg:flex">
                     <li>
@@ -101,7 +101,7 @@ const Navbar = () => {
                                             className="inline-flex items-center"
                                         >
 
-                                            <Image height={128 / 3} width={114 / 3} src={"/assets/expand.png"} />
+
                                         </a>
                                     </div>
                                     <div>
