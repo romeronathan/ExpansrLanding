@@ -39,7 +39,13 @@ const Navbar = () => {
                         </a>
                     </li>
                 </ul >
-                <img height={128 / 3} width={114 / 3} src="/assets/expand.png" />
+                <div className="flex flex-col content-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="m-auto h-6 w-6 " fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
+                    </svg>
+                    <a>expansr</a>
+                </div>
+
                 <ul className="flex items-center hidden space-x-8 lg:flex">
                     <li>
                         <a
@@ -76,10 +82,12 @@ const Navbar = () => {
                     <button
                         aria-label="Open Menu"
                         title="Open Menu"
-                        className="p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline hover:bg-deep-purple-50 focus:bg-deep-purple-50"
+                        className=" p-2 mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline hover:bg-deep-purple-50 focus:bg-deep-purple-50"
                         onClick={() => setIsMenuOpen(true)}
                     >
-
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
                     </button>
                     {isMenuOpen && (
                         <div className="absolute top-0 left-0 w-full">
@@ -103,7 +111,9 @@ const Navbar = () => {
                                             className="p-2 -mt-2 -mr-2 transition duration-200 rounded hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                                             onClick={() => setIsMenuOpen(false)}
                                         >
-
+                                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                                                <path strokeLinecap="round" strokeLinejoin="round" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                            </svg>
                                         </button>
                                     </div>
                                 </div>
@@ -162,11 +172,11 @@ const Navbar = () => {
                                         <li>
                                             <a
 
-                                                className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+                                                className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md text-black focus:shadow-outline focus:outline-none"
                                                 aria-label="Sign up"
                                                 title="Sign up"
                                             >
-                                                Sign up
+                                                Contact Us
                                             </a>
                                         </li >
                                     </ul >
