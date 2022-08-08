@@ -9,7 +9,7 @@ const Testimonial: React.FC = () => {
                 <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-y-10 sm:gap-y-12 lg:divide-x">
 
                     <div className="flex flex-col items-center gap-4 md:gap-6 sm:px-4 lg:px-8">
-                        <div className="text-gray-600 text-center">"Yeaaa”</div>
+                        <div className="text-gray-600 text-center">eaaa</div>
 
                         <div className="flex flex-col sm:flex-row items-center gap-2 md:gap-3">
                             <div className="w-12 md:w-14 h-12 md:h-14 bg-gray-100 rounded-full overflow-hidden shadow-lg">
@@ -39,7 +39,7 @@ const Testimonial: React.FC = () => {
                     </div>
 
                     <div className="flex flex-col items-center gap-4 md:gap-6 sm:px-4 lg:px-8">
-                        <div className="text-gray-600 text-center">“This is a section of some simple filler text, also known as placeholder text.”</div>
+                        <div className="text-gray-600 text-center">This is a section of some simple filler text, also known as placeholder text.</div>
 
                         <div className="flex flex-col sm:flex-row items-center gap-2 md:gap-3">
                             <div className="w-12 md:w-14 h-12 md:h-14 bg-gray-100 rounded-full overflow-hidden shadow-lg">
