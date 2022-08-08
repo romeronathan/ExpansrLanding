@@ -19,12 +19,15 @@ const Home: NextPage = () => {
           <link rel="icon" href="/favicon.ico" />
           <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"></link>
         </Head>
-        <div className='z-10 pb-3 drop-shadow-md bg-gradient-to-r from-cyan-300 to-blue-100'>
+        <div className='-z-50 pb-3 drop-shadow-md bg-gradient-to-r from-cyan-300 to-blue-100'>
           <Navbar />
           <Header />
 
         </div>
-        <Feature />
+        <div className='drop-shadow-lg relative bg-white z-50'>
+          <Feature />
+        </div>
+
       </div>
       <div className="pb-3 drop-shadow-md bg-gradient-to-b from-cyan-300 to-blue-100">
         <Content />

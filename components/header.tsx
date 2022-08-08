@@ -11,11 +11,12 @@ const Header = () => {
   const { current: elContainer } = refContainer;
   if (elContainer) {
     progress = Math.min(1, scrollY / elContainer.offsetHeight);
+    console.log(progress);
   }
 
 
   return (
-    <div style={{ transform: `translateY(${progress * 20}vh)` }} ref={refContainer} className="sticky top-0
+    <div style={{ transform: `translateY(${progress * 25}vh)`, filter: `blur(${progress * 5}px)` }} ref={refContainer} className="sticky top-0
      relative flex flex-col-reverse px-4 py-16 mx-auto lg:block lg:flex-col lg:py-32 xl:py-48 md:px-8 sm:max-w-xl md:max-w-full -z-10">
       <div className="flex justify-center h-full -mx-4 overflow-hidden lg:pt-24 lg:pb-16 lg:pr-8 xl:pr-0 lg:w-1/2 lg:absolute lg:justify-end lg:bottom-0 lg:left-0 lg:items-center">
         <img
