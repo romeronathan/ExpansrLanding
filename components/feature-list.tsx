@@ -6,8 +6,8 @@ export const FeatureList = () => {
                     <span className="relative inline-block">
 
                         <span className="relative">You</span>
-                    </span>{' '}
-                    miss 100% of the shots you don't take
+                    </span>
+                    miss 100% of the shots you don&apos;t take
                 </h2>
                 <p className="text-base text-gray-700 md:text-lg">
                     Sed ut perspiciatis unde omnis iste natus error sit voluptatem
