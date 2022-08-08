@@ -10,6 +10,8 @@ import FeatureList from '../components/feature-list'
 import Content from '../components/content-block'
 import { useRef, useContext } from 'react'
 import { ScrollContext } from '../components/scroll-observer'
+import Testimonial from '../components/testimonial'
+import ContactForm from '../components/email-form'
 const Home: NextPage = () => {
   const refContainer = useRef<HTMLDivElement>(null);
   const { scrollY } = useContext(ScrollContext);
@@ -30,12 +32,13 @@ const Home: NextPage = () => {
           <link rel="icon" href="/favicon.ico" />
           <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"></link>
         </Head>
+
         <div style={{ transform: `translateY(${progress * 30}vh)` }} ref={refContainer} className='-z-50 pb-3 drop-shadow-md bg-gradient-to-r from-cyan-300 to-blue-100'>
           <Navbar />
           <Header />
 
         </div>
-        <div className='drop-shadow-lg relative bg-white z-50'>
+        <div className='drop-shadow-lg relative bg-white z-40'>
           <Feature />
         </div>
 
@@ -43,10 +46,13 @@ const Home: NextPage = () => {
       <div className="pb-3 drop-shadow-md bg-gradient-to-b from-cyan-300 to-blue-100">
         <Content />
         <FeatureList />
+        <Testimonial />
+        {/* <ContactForm /> */}
+        
       </div>
 
       <Footer />
-      </div>
+    </div>
   )
 }
 
