@@ -20,6 +20,7 @@ const Header = () => {
       </div>
       <div className="relative flex justify-end max-w-xl mx-auto xl:pr-32 lg:max-w-screen-xl">
         <div className="mb-16 lg:pr-5 lg:max-w-lg lg:mb-0">
+
           <div className="max-w-xl mb-6">
             <div>
               <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
@@ -41,7 +42,9 @@ const Header = () => {
           >
             Get in touch.
           </button>
+
         </div>
+
       </div>
     </div >
 

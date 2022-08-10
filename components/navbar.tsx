@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { useContext, useRef, useState } from "react";
 import { ScrollContext } from "./scroll-observer";
+import { FaLinkedin, FaPhone, FaTwitter } from 'react-icons/fa';
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -8,10 +9,46 @@ const Navbar = () => {
 
 
     return (
-        <div className={`top-0 drop-shadow-md mx-auto lg:py-4 bg-white  md:max-w-full  md:px-24 lg:px-8 `}>
-            <div className="relative flex items-center justify-between">
+        <div className={`sticky top-0 drop-shadow-md mx-auto z-50 bg-white  md:max-w-full  `}>
+            <div className="max-w-full drop-shadow-sm bg-gray-100 p-2 font-medium  relative flex justify-end">
+                <ul className="flex items-center hidden space-x-8 lg:flex">
+
+                    <li>
+                        <a
+
+                            aria-label="Our product"
+                            title="Our product"
+                            className="text-sm tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                        >
+                            Contact
+                        </a>
+                    </li>
+                    <li>
+                        <a
+
+                            aria-label="Product pricing"
+                            title="Product pricing"
+                            className="text-sm tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                        >
+                            <p>(519) - 412 - 3123</p>
+                        </a>
+                    </li>
+                    <li className="flex gap-1">
+                        <FaLinkedin />
+
+
+                    </li>
+
+
+                </ul>
+
+
+
+
+            </div>
+            <div className="relative flex items-center justify-between p-3 ">
                 <a
-                    
+
                     aria-label="Company"
                     title="Company"
                     className="inline-flex items-center"
@@ -38,7 +75,7 @@ const Navbar = () => {
                 <ul className="flex items-center hidden space-x-8 lg:flex">
                     <li>
                         <a
-                            
+
                             aria-label="Our product"
                             title="Our product"
                             className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
@@ -48,7 +85,7 @@ const Navbar = () => {
                     </li>
                     <li>
                         <a
-                            
+
                             aria-label="Our product"
                             title="Our product"
                             className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
@@ -58,7 +95,7 @@ const Navbar = () => {
                     </li>
                     <li>
                         <a
-                            
+
                             aria-label="Product pricing"
                             title="Product pricing"
                             className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
@@ -68,7 +105,7 @@ const Navbar = () => {
                     </li>
                     <li>
                         <a
-                            
+
                             aria-label="About us"
                             title="About us"
                             className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
@@ -76,22 +113,13 @@ const Navbar = () => {
                             About us
                         </a>
                     </li>
-                    <li>
-                        <a
-                            
-                            className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-black transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
-                            aria-label="Sign up"
-                            title="Sign up"
-                        >
-                            Contact
-                        </a>
-                    </li>
+
                 </ul>
                 <div className="lg:hidden">
                     <button
                         aria-label="Open Menu"
                         title="Open Menu"
-                        className="p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline hover:bg-deep-purple-50 focus:bg-deep-purple-50"
+                        className="p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline"
                         onClick={() => setIsMenuOpen(true)}
                     >
                         <svg className="w-5 text-gray-600" viewBox="0 0 24 24">
@@ -115,7 +143,7 @@ const Navbar = () => {
                                 <div className="flex items-center justify-between mb-4">
                                     <div>
                                         <a
-                                            
+
                                             aria-label="Company"
                                             title="Company"
                                             className="inline-flex items-center"
@@ -160,7 +188,7 @@ const Navbar = () => {
                                     <ul className="space-y-4">
                                         <li>
                                             <a
-                                                
+
                                                 aria-label="Our product"
                                                 title="Our product"
                                                 className="font-medium tracking-wide text-gray-700 transition-colors duration-200"
@@ -170,7 +198,7 @@ const Navbar = () => {
                                         </li>
                                         <li>
                                             <a
-                                                
+
                                                 aria-label="Our product"
                                                 title="Our product"
                                                 className="font-medium tracking-wide text-gray-700 transition-colors duration-200"
@@ -180,7 +208,7 @@ const Navbar = () => {
                                         </li>
                                         <li>
                                             <a
-                                                
+
                                                 aria-label="Product pricing"
                                                 title="Product pricing"
                                                 className="font-medium tracking-wide text-gray-700 transition-colors duration-200"
@@ -190,7 +218,7 @@ const Navbar = () => {
                                         </li>
                                         <li>
                                             <a
-                                                
+
                                                 aria-label="About us"
                                                 title="About us"
                                                 className="font-medium tracking-wide text-gray-700 transition-colors duration-200"
@@ -200,7 +228,7 @@ const Navbar = () => {
                                         </li>
                                         <li>
                                             <a
-                                                
+
                                                 className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-black transition duration-200 rounded shadow-md focus:shadow-outline focus:outline-none"
                                                 aria-label="Sign up"
                                                 title="Sign up"
