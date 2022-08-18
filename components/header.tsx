@@ -10,10 +10,10 @@ const Header = () => {
     <div
       className="
     back-image overflow-hidden  sticky flex flex-col-reverse top-0 px-4 py-20 lg:block lg:py-32 xl:py-48  md:px-2 sm:max-w-xl md:max-w-full -z-10 min-w-screen">
-      <div className="flex justify-end h-full -mx-10 overflow-hidden lg:pt-24 lg:pb-16  xl:pl-0 lg:w-1/2 lg:absolute  lg:bottom-0 lg:right-0 lg:items-center">
+      <div className="drop-shadow-xl flex justify-end h-full -mx-10 overflow-hidden lg:pt-24 lg:pb-16  xl:pl-0 lg:w-1/2 lg:absolute  lg:bottom-0 lg:right-0 lg:items-center">
         <img
           src="/laptop.png"
-          className="object-cover object-left w-full h-auto lg:w-auto lg:h-full"
+          className="drop-shadow-xl object-cover object-left w-full h-auto lg:w-auto lg:h-full"
           alt=""
         />
       </div>
@@ -34,9 +34,14 @@ const Header = () => {
               quae. explicabo.
             </p>
           </div>
-          <a href="#_" className="relative w-auto px-6 py-3 overflow-hidden text-base font-semibold text-center text-gray-800 rounded-lg bg-gray-50 hover:text-black hover:bg-white">
-            Get Started
-          </a>
+          <div className="inline-flex w-full mt-4 overflow-hidden rounded-lg shadow sm:w-auto sm:mx-3 sm:mt-0">
+            <a href="#" className="inline-flex items-center justify-center w-full px-5 py-3 text-base font-medium text-white transition-colors t duration-150 transform sm:w-auto bg-gradient-to-r from-blue-700 to-blue-900 hover:from-blue-600 hover:to-blue-600">
+
+              <span className="mx-2">
+                Get in touch.
+              </span>
+            </a>
+          </div>
         </div>
 
       </div>
