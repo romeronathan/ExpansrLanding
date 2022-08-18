@@ -15,21 +15,21 @@ module.exports = {
       },
       colors: {
         "primary": "#1D70B7",
-        "primary-light": "#69a7db",
+        "primary-light": "#7dc7ff",
         "dark-blue": "#02009f",
 
       },
       animation: {
-        'text': 'text 3s ease infinite',
+        'text': 'text 5s ease infinite',
       },
       keyframes: {
         'text': {
           '0%, 100%': {
-            'background-size': '100% 200%',
+            'background-size': '200% 200%',
             'background-position': 'left center'
           },
           '50%': {
-            'background-size': '150% 200%',
+            'background-size': '200% 200%',
             'background-position': 'right center'
           }
         },

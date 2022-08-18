@@ -25,7 +25,7 @@ const Header = () => {
             <h2 className="mb-6 f text-4xl font-bold tracking-tight text-gray-900 sm:text-8xl sm:leading-none ">
               Technology solutions for <span className="bg-clip-text font-extrabold text-transparent 
                bg-gradient-to-r bg-clip-text text-transparent 
-               from-dark-blue via-blue-500 to-dark-blue
+               from-primary via-primary-light to-primary
                animate-text">scale.</span>
             </h2>
             <p className="text-base text-gray-700 md:text-lg">
@@ -35,7 +35,7 @@ const Header = () => {
             </p>
           </div>
           <div className="inline-flex w-full mt-4 overflow-hidden rounded-lg shadow sm:w-auto sm:mx-3 sm:mt-0">
-            <a href="#" className="inline-flex items-center justify-center w-full px-5 py-3 text-base font-medium text-white transition-colors t duration-150 transform sm:w-auto bg-gradient-to-r from-blue-700 to-blue-900 hover:from-blue-600 hover:to-blue-600">
+            <a href="#" className="inline-flex items-center justify-center w-full px-5 py-3 text-base font-medium text-white transition-colors t duration-150 transform sm:w-auto bg-gradient-to-l from-primary to-primary-light hover:from-blue-600 hover:to-blue-600">
 
               <span className="mx-2">
                 Get in touch.

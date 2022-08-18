@@ -25,9 +25,9 @@ const Navbar = () => {
     return (
         <div
             style={{ backgroundColor: scrolled ? "white" : "white" }}
-            className={`ease-in-out duration-300  flex justify-center fixed top-0 ${scrolled ? 'drop-shadow-xl' : ''} w-full z-50`}>
+            className={`px-6 py-1 ease-in-out duration-300  flex justify-center fixed top-0 ${scrolled ? 'drop-shadow-xl' : ''} w-full z-50`}>
 
-            <div ref={refContainer} className="  w-5/6 relative flex items-center justify-between">
+            <div ref={refContainer} className="  w-full relative flex items-center justify-between">
 
 
                 <a
@@ -36,7 +36,7 @@ const Navbar = () => {
                     title="Company"
                     className="inline-flex items-center"
                 >
-                    <Image src="/logo.jpeg" alt="logo" width={100} height={80} />
+                    <Image src="/logo.png" alt="logo" width={200} height={80} />
 
                 </a>
                 <ul className="flex items-center hidden space-x-12 lg:flex p-3">
@@ -124,7 +124,7 @@ const Navbar = () => {
                                             title="Company"
                                             className="inline-flex items-center"
                                         >
-                                            <Image src="/logo.jpeg" alt="logo" />
+                                            <Image width={150} height={50} src="/logo.png" alt="logo" />
                                         </a>
                                     </div>
                                     <div>
