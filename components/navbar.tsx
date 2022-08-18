@@ -7,78 +7,45 @@ const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
 
+    const refContainer = useRef<HTMLDivElement>(null);
+    const { scrollY } = useContext(ScrollContext);
+
+    let progress = 0;
+    let scrolled = false;
+
+    const { current: elContainer } = refContainer;
+    if (elContainer) {
+        progress = Math.min(1, scrollY / elContainer.offsetHeight);
+        console.log(progress);
+        scrolled = progress == 1;
+    }
+
+
 
     return (
-        <div className={`sticky top-0 drop-shadow-md mx-auto z-50 bg-white  md:max-w-full  `}>
-            <div className="max-w-full drop-shadow-sm bg-gray-100 p-2 font-medium  relative flex justify-end">
-                <ul className="flex items-center hidden space-x-8 lg:flex">
+        <div
+            style={{ backgroundColor: scrolled ? "white" : "white" }}
+            className={`ease-in-out duration-300  flex justify-center fixed top-0 ${scrolled ? 'drop-shadow-xl' : ''} w-full z-50`}>
 
-                    <li>
-                        <a
-
-                            aria-label="Our product"
-                            title="Our product"
-                            className="text-sm tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                        >
-                            Contact
-                        </a>
-                    </li>
-                    <li>
-                        <a
-
-                            aria-label="Product pricing"
-                            title="Product pricing"
-                            className="text-sm tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                        >
-                            <p>(519) - 412 - 3123</p>
-                        </a>
-                    </li>
-                    <li className="flex gap-1">
-                        <FaLinkedin />
+            <div ref={refContainer} className="  w-5/6 relative flex items-center justify-between">
 
 
-                    </li>
-
-
-                </ul>
-
-
-
-
-            </div>
-            <div className="relative flex items-center justify-between p-3 ">
                 <a
 
                     aria-label="Company"
                     title="Company"
                     className="inline-flex items-center"
                 >
-                    <svg
-                        className="w-8 text-deep-purple-accent-400"
-                        viewBox="0 0 24 24"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeMiterlimit="10"
-                        stroke="currentColor"
-                        fill="none"
-                    >
-                        <rect x="3" y="1" width="7" height="12" />
-                        <rect x="3" y="17" width="7" height="6" />
-                        <rect x="14" y="1" width="7" height="6" />
-                        <rect x="14" y="11" width="7" height="12" />
-                    </svg>
-                    <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-                        Company
-                    </span>
+                    <Image src="/logo.png" alt="logo" width={100} height={80} />
+
                 </a>
-                <ul className="flex items-center hidden space-x-8 lg:flex">
+                <ul className="flex items-center hidden space-x-12 lg:flex p-3">
                     <li>
                         <a
 
                             aria-label="Our product"
                             title="Our product"
-                            className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                            className="font-medium tracking-wide text-gray-700 transition-colors duration-200 "
                         >
                             Product
                         </a>
@@ -88,7 +55,7 @@ const Navbar = () => {
 
                             aria-label="Our product"
                             title="Our product"
-                            className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                            className="font-medium tracking-wide text-gray-700 transition-colors duration-200 "
                         >
                             Features
                         </a>
@@ -98,7 +65,7 @@ const Navbar = () => {
 
                             aria-label="Product pricing"
                             title="Product pricing"
-                            className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                            className="font-medium tracking-wide text-gray-700 transition-colors duration-200 "
                         >
                             Pricing
                         </a>
@@ -108,10 +75,19 @@ const Navbar = () => {
 
                             aria-label="About us"
                             title="About us"
-                            className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                            className="font-medium tracking-wide text-gray-700 transition-colors duration-200 "
                         >
                             About us
                         </a>
+                    </li>
+                    <li>
+                        {/* <button
+                            type="submit"
+                            className={`ease-in-out duration-300 cursor-pointer ease-in-out duration-300 hover:scale-105 inline-flex items-center justify-center w-full h-10 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md 
+                            ${scrolled ? 'bg-gradient-to-r from-blue-300 to-primary' : "bg-white text-black"} focus:shadow-outline focus:outline-none`}
+                        >
+                            Contact Us
+                        </button> */}
                     </li>
 
                 </ul>
@@ -148,24 +124,7 @@ const Navbar = () => {
                                             title="Company"
                                             className="inline-flex items-center"
                                         >
-                                            <svg
-                                                className="w-8 text-deep-purple-accent-400"
-                                                viewBox="0 0 24 24"
-                                                strokeLinejoin="round"
-                                                strokeWidth="2"
-                                                strokeLinecap="round"
-                                                strokeMiterlimit="10"
-                                                stroke="currentColor"
-                                                fill="none"
-                                            >
-                                                <rect x="3" y="1" width="7" height="12" />
-                                                <rect x="3" y="17" width="7" height="6" />
-                                                <rect x="14" y="1" width="7" height="6" />
-                                                <rect x="14" y="11" width="7" height="12" />
-                                            </svg>
-                                            <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-                                                Company
-                                            </span>
+                                            <Image src="/logo.jpeg" alt="logo" />
                                         </a>
                                     </div>
                                     <div>

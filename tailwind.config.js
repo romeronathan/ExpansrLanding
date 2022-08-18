@@ -8,11 +8,38 @@ module.exports = {
     letterSpacing: {
       tight: '-0.015em',
     },
+
     extend: {
       height: {
-        'half-screen': '50vh', 
+        'half-screen': '50vh',
       },
+      colors: {
+        "primary": "#1D70B7",
+        "primary-light": "#69a7db",
+        "dark-blue": "#02009f",
+
+      },
+      animation: {
+        'text': 'text 3s ease infinite',
+      },
+      keyframes: {
+        'text': {
+          '0%, 100%': {
+            'background-size': '100% 200%',
+            'background-position': 'left center'
+          },
+          '50%': {
+            'background-size': '150% 200%',
+            'background-position': 'right center'
+          }
+        },
+
+
+      }
+
     },
   },
-  plugins: [],
+
 }
+
+

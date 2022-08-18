@@ -13,15 +13,6 @@ import { ScrollContext } from '../components/scroll-observer'
 import Testimonial from '../components/testimonial'
 import ContactForm from '../components/email-form'
 const Home: NextPage = () => {
-  const refContainer = useRef<HTMLDivElement>(null);
-  const { scrollY } = useContext(ScrollContext);
-
-  let progress = 0;
-
-  const { current: elContainer } = refContainer;
-  if (elContainer) {
-    progress = Math.min(1, scrollY / elContainer.offsetHeight);
-  }
 
   return (
     <div>
@@ -34,8 +25,9 @@ const Home: NextPage = () => {
           <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"></link>
         </Head>
 
-        <div style={{ transform: `translateY(${progress * 30}vh)` }} ref={refContainer} className='-z-50 pb-3 drop-shadow-md bg-gradient-to-r from-cyan-200 to-blue-100'>
-      
+        <div className='-z-50 pb-3 drop-shadow-md 
+       bg-white'>
+
           <Header />
 
         </div>
@@ -44,7 +36,7 @@ const Home: NextPage = () => {
         </div>
 
       </div>
-      <div className="pb-3 drop-shadow-md bg-gradient-to-b from-cyan-300 to-blue-100">
+      <div className="pb-3 drop-shadow-md bg-gradient-to-b from-primary to-blue-100">
         <Content />
         <FeatureList />
         <Testimonial />
