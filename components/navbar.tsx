@@ -36,7 +36,7 @@ const Navbar = () => {
                     title="Company"
                     className="inline-flex items-center"
                 >
-                    <Image src="/logo.png" alt="logo" width={100} height={80} />
+                    <Image src="/logo.jpeg" alt="logo" width={100} height={80} />
 
                 </a>
                 <ul className="flex items-center hidden space-x-12 lg:flex p-3">
