@@ -6,6 +6,8 @@ const Header = () => {
 
 
 
+
+
   return (
     <div
       className="
@@ -36,7 +38,12 @@ const Header = () => {
             </p>
           </div>
           <div className="inline-flex w-full mt-4 overflow-hidden rounded-lg shadow sm:w-auto sm:mx-3 sm:mt-0">
-            <a href="#" className="inline-flex items-center justify-center w-full px-5 py-3 text-base font-medium text-white transition-colors t duration-150 transform sm:w-auto
+            <a onClick={
+              async () => {
+                const body = await fetch('/api/hello')
+                console.log(body);
+              }
+            } href="#" className="inline-flex items-center justify-center w-full px-5 py-3 text-base font-medium text-white transition-colors t duration-150 transform sm:w-auto
              bg-gradient-to-l from-primary-light to-blue-300 hover:from-blue-600 hover:to-blue-600">
 
               <span className="mx-2">
