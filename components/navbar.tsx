@@ -17,26 +17,22 @@ const Navbar = () => {
     if (elContainer) {
         progress = Math.min(1, scrollY / elContainer.offsetHeight);
         console.log(progress);
-        scrolled = progress == 1;
+        scrolled = progress > 0;
     }
 
 
 
     return (
         <div
-            style={{ backgroundColor: scrolled ? "white" : "white" }}
-            className={`px-6 py-1 ease-in-out duration-300  flex justify-center fixed top-0 ${scrolled ? 'drop-shadow-xl' : ''} w-full z-50`}>
-
+            style={{ backgroundColor: scrolled ? "white" : "transparent" }}
+            className={`px-6 py-1 ease-in-out duration-200 flex justify-center fixed top-0 ${scrolled ? 'drop-shadow-xl' : ''} w-full z-50`}>
             <div ref={refContainer} className="  w-full relative flex items-center justify-between">
-
-
                 <a
-
                     aria-label="Company"
                     title="Company"
                     className="inline-flex items-center"
                 >
-                    <Image src="/logo.png" alt="logo" width={200} height={80} />
+                    <Image src="/logo.png" alt="logo" width={150} height={60} />
 
                 </a>
                 <ul className="flex items-center hidden space-x-12 lg:flex p-3">
